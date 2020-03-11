@@ -1,0 +1,87 @@
+.titulo{
+	display: inline-block;
+	width:90%;
+	margin: 0 5%;
+	padding: 8px 0 0 0;
+	border-bottom: solid;
+	border-width: 1px;
+	border-bottom-color: #ccc;
+}
+
+.container{
+	width: 90%;
+	margin: 20px 5%;
+}
+
+.row{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items:center;
+}
+
+label{
+	width: 100%;
+	text-align: right;
+}
+
+input[type=text]{
+	width:100%;
+	padding:5px 0;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+/* botão gerado internament pelo <select> */
+.bs-placeholder{
+	padding: 16px 0;
+}
+
+/*
+* tinha uma propriedade no bootstrap-select de width:220px; sobrescrevendo a minha nao sei como
+*
+* então eu peguei a classe exata dela no chrome dev tools 
+* '.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)'
+*
+* porque se eu colocasse apenas 'select' ele nao alterava o width pra 100%
+*/
+
+/*select*/ .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+
+#email_id{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.acoes{
+	justify-content: center;
+}
+
+.botao{
+	display: inline;
+	margin: 0 30px;
+}
+
+#enviar_id{
+	background-color: #1E90FF;
+	color: white;
+	min-width: 70px;
+	padding:5px 0;
+	margin: auto auto;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+}
+
+#limpar_id{
+	background-color: orange;
+	color: white;
+	min-width: 70px;
+	padding:5px 0;
+	margin: auto auto;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+}

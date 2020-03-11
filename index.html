@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastro de Alunos</title>
+
+		<script src="jquery/jquery.min.js"></script><!--jquery-->
+		<script src="js/bootstrap.min.js"></script><!--bootstrap 3.3.7-->
+		<script type="text/javascript" src="jquery/jquery.mask.min.js"></script><!--jquery masks-->
+		<script src="js/bootstrap-select.min.js"></script><!--bootstrap select js-->
+		<script src="script.js"></script><!--my javascript file-->
+		
+		<link rel="stylesheet" href="css/bootstrap-select.css"><!--bootstrap select css-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" ><!--bootstrap css-->
+		<link rel="stylesheet" href="style.css"><!--my css file-->
+	</head>
+
+	<body>
+
+		<div class="titulo"><h1>Cadastro de alunos</h1></div>
+
+		<form>
+			<div class="titulo"><h2>Dados do aluno</h2></div>
+			<br /><br />
+
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<label for="prontuario_id">Prontuário:</label>
+					</div>
+					<div class="col-lg-3">
+						<input type="text" id="prontuario_id" name="Prontuário" class="dados" maxlength="100">
+					</div><!--col-->
+				</div><!--row-->
+			</div><!--container-->
+				
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<label for="aluno_nome_id">Nome:</label>
+					</div>
+
+					<div class="col-lg-4">
+						<input type="text" id="aluno_nome_id" name="Nome do aluno" class="dados" maxlength="100">
+					</div>
+
+					<div class="col-lg-1">
+						<label for="aluno_cpf_id">CPF:</label>
+					</div>
+
+					<div class="col-lg-2">
+						<input type="text" id="aluno_cpf_id" name="CPF do aluno" class="cpf dados">
+					</div>
+
+					<div class="col-lg-1">
+						<label for="aluno_rg_id">RG:</label>
+					</div>
+
+					<div class="col-lg-2">
+						<input type="text" id="aluno_rg_id" name="RG do aluno" class="rg dados">
+					</div><!--col-->
+				</div><!--row-->
+			</div><!--container-->
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<label for="aluno_data_id">Data Nascimento:</label>
+					</div>
+
+					<div class="col-lg-2">
+						<input type="text" id="aluno_data_id" name="Data de nascimento do aluno" class="date dados" placeholder="mm/dd/yyyy">
+					</div>
+					
+					<div class="col-lg-1">
+						<label for="sexo_id">Sexo:</label>
+					</div>
+
+					<div class="col-lg-1">
+						<select id="sexo_id" name="sexo" class="selectpicker dados sexo" title="" showTick="true">
+							<option hidden disabled selected></option>
+							<option value="masculino">Masculino</option>
+							<option value="feminino">Feminino</option>
+						</select>
+					</div>
+
+					<div class="col-lg-1">
+						<label for="telefone_id">Telefone:</label>
+					</div>
+
+					<div class="col-lg-2">
+						<input type="text" id="telefone_id" name="Telefone" class="tel dados">
+					</div>
+						
+					<div class="col-lg-1">
+						<label for="aluno_celular_id">Celular:</label>
+					</div>
+
+					<div class="col-lg-2">
+						<input type="text" id="aluno_celular_id" name="Celular do aluno" class="phone dados">
+					</div><!--col-->
+				</div><!--row-->
+			</div><!--container-->
+				
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<label for="curso_id" class="left-label">Curso:</label>
+					</div>
+
+					<div class="col-lg-4">
+						<select id="curso_id" name="cursos" class="selectpicker dados cursos" multiple data-max-options="2" title="">
+							<option name="curso" value="Engenharia Elétrica">Engenharia Elétrica</option>
+							<option name="curso" value="Engenharia Mecânica">Engenharia Mecânica</option>
+							<option name="curso" value="Ciência da Computação">Ciência da Computação</option>
+							<option name="curso" value="Sistemas de Informação">Sistemas de Informação</option>
+							<option name="curso" value="Arquitetura">Arquitetura</option>
+						</select>
+					</div>
+
+					<div class="col-lg-1">
+						<label for="aluno_email_id">E-mail:</label>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="input-group" >
+							<span class="input-group-addon" id="basic-addon1">@</span>
+							<input type="email" id="aluno_email_id" aria-describedby="basic-addon1" name="E-mail do aluno" class="form-control dados" maxlength="100">
+						</div><!--input group-->
+					</div><!--col-->
+				</div><!--row-->
+			</div><!--container-->
+
+
+			<div class="titulo"><h2>Dados do responsável</h2></div>
+			<br /><br />
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<label for="responsavel_nome_id">Nome:</label>
+					</div>
+
+					<div class="col-lg-4">
+						<input type="text" id="responsavel_nome_id" name="Nome do responsável" class="dados" maxlength="100">
+					</div>
+
+					<div class="col-lg-1">
+						<label for="responsavel_cpf_id">CPF:</label>
+					</div>
+
+					<div class="col-lg-2">
+						<input type="text" id="responsavel_cpf_id" name="CPF do responsável" class="cpf dados">
+					</div>
+
+					<div class="col-lg-1">
+						<label for="responsavel_rg_id">RG:</label>
+					</div>
+
+					<div class="col-lg-2">
+						<input type="text" id="responsavel_rg_id" name="RG do responsável" class="rg dados">
+					</div><!--col-->
+				</div><!--row-->
+			</div><!--container-->
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-2">
+						<label for="responsavel_email_id">E-mail:</label>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1">@</span>
+							<input type="email" id="responsavel_email_id" aria-describedby="basic-addon1" name="E-mail do responsável" class="form-control dados" maxlength="100">
+						</div>
+					</div>
+
+					<div class="col-lg-1">
+						<label for="responsavel_data_id">Dt Nasc:</label>
+					</div>
+
+					<div class="col-lg-2">
+						<input type="text" id="responsavel_data_id" name="Data de nascimento do responsável" class="date dados" placeholder="mm/dd/yyyy">
+					</div>
+
+					<div class="col-lg-1">
+						<label for="responsavel_celular_id">Celular:</label>
+					</div>
+
+					<div class="col-lg-2">
+						<input type="text" id="responsavel_celular_id" name="Celular do responsável" class="phone dados" >
+					</div><!--col-->
+				</div><!--row-->
+			</div><!--container-->
+
+			<div class="container">
+				<div class="row acoes">
+					<div class="col botao">
+						<input type="button" value="Enviar" id="enviar_id">
+					</div>
+					
+					<div class="col botao">
+						<input type="reset" value="Limpar" id="limpar_id">
+					</div><!--col-->
+				</div><!--row-->
+			</div><!--container-->
+		</form>
+	</body>
+</html>
